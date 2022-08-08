@@ -66,7 +66,7 @@ class _LoginScreenState extends State<LoginScreen> {
       height: 190,
       child: InkWell(
         onTap: (){
-
+          Navigator.pushNamed(context, '/guest_login');
         },
         child: Card(
           elevation: 5,
