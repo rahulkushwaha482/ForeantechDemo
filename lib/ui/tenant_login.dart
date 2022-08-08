@@ -87,9 +87,11 @@ class _TenantLoginState extends State<TenantLogin> {
                               ),
                               hintText: "Phone Number",
                               labelStyle: const TextStyle(
+                                  fontFamily: 'SemiBold',
                                 color: AppTheme.themeColor
                               ),
                               hintStyle: const TextStyle(
+                                fontFamily: 'SemiBold',
                                   color: AppTheme.themeColor
                               ),
                               labelText: 'Phone Number',
@@ -105,6 +107,7 @@ class _TenantLoginState extends State<TenantLogin> {
                                   'Next',
                                   style: TextStyle(
                                     fontSize: 15,
+                                    fontFamily: 'SemiBold',
                                     color: AppTheme.whiteColor,
                                   ),
                                 ),

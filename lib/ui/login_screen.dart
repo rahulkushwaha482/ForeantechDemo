@@ -31,18 +31,18 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
                 const Text(
                   'WelCome TO',
-                  style: TextStyle(fontSize: 25, color: AppTheme.whiteColor),
+                  style: TextStyle(fontSize: 25, color: AppTheme.whiteColor,fontFamily: 'SemiBold'),
                 ),
                 const Text(
                   'FNF Coliving',
-                  style: TextStyle(fontSize: 25, color: AppTheme.whiteColor),
+                  style: TextStyle(fontSize: 25, color: AppTheme.whiteColor,fontFamily: 'SemiBold'),
                 ),
                 const SizedBox(
                   height: 50,
                 ),
                 const Text(
                   'Login in as',
-                  style: TextStyle(fontSize: 22, color: AppTheme.whiteColor),
+                  style: TextStyle(fontSize: 22, color: AppTheme.whiteColor,fontFamily: 'SemiBold'),
                 ),
                 const SizedBox(
                   height: 10,
@@ -91,7 +91,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     )),
                 const Text(
                   'Guest',
-                  style: TextStyle(fontSize: 18, color: AppTheme.themeColor),
+                  style: TextStyle(fontSize: 18, color: AppTheme.themeColor,fontFamily: 'SemiBold'),
                 )
               ],
             ),
@@ -132,7 +132,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     )),
                 const Text(
                   'Tenant',
-                  style: TextStyle(fontSize: 18, color: AppTheme.themeColor),
+                  style: TextStyle(fontSize: 18, color: AppTheme.themeColor,fontFamily: 'SemiBold'),
                 )
               ],
             ),
