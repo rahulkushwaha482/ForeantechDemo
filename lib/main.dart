@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:forentech_assignment/core/utils/app_routes.dart';
 import 'package:forentech_assignment/ui/login_screen.dart';
 import 'package:forentech_assignment/ui/splash_screen.dart';
+import 'package:forentech_assignment/ui/tenant_login.dart';
 
 void main()  {
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
@@ -30,6 +31,9 @@ class MyApp extends StatelessWidget {
         routes: <String, WidgetBuilder>{
           StringConfig.LOGIN_PAGE_NEW: (BuildContext context) =>
           const LoginScreen(),
+
+          StringConfig.TENANT_LOGIN: (BuildContext context) =>
+          const TenantLogin(),
         });
   }
 }

@@ -64,32 +64,37 @@ class _LoginScreenState extends State<LoginScreen> {
     return SizedBox(
       width: MediaQuery.of(context).size.width,
       height: 190,
-      child: Card(
-        elevation: 5,
-        shape: const RoundedRectangleBorder(
-            borderRadius: BorderRadius.all(Radius.circular(15))),
-        color: AppTheme.whiteColor,
-        child: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              Container(
-                  height: 100,
-                  width: 100,
-                  decoration: BoxDecoration(
-                      color: AppTheme.themeColor,
-                      borderRadius: BorderRadius.circular(100)
-                      //more than 50% of width makes circle
-                      ),
-                  child: Image.asset(
-                    'assets/icons/account.png',
-                    scale: 1.2,
-                  )),
-              const Text(
-                'Guest',
-                style: TextStyle(fontSize: 18, color: AppTheme.themeColor),
-              )
-            ],
+      child: InkWell(
+        onTap: (){
+
+        },
+        child: Card(
+          elevation: 5,
+          shape: const RoundedRectangleBorder(
+              borderRadius: BorderRadius.all(Radius.circular(15))),
+          color: AppTheme.whiteColor,
+          child: Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Container(
+                    height: 100,
+                    width: 100,
+                    decoration: BoxDecoration(
+                        color: AppTheme.themeColor,
+                        borderRadius: BorderRadius.circular(100)
+                        //more than 50% of width makes circle
+                        ),
+                    child: Image.asset(
+                      'assets/icons/account.png',
+                      scale: 1.2,
+                    )),
+                const Text(
+                  'Guest',
+                  style: TextStyle(fontSize: 18, color: AppTheme.themeColor),
+                )
+              ],
+            ),
           ),
         ),
       ),
@@ -100,32 +105,37 @@ class _LoginScreenState extends State<LoginScreen> {
     return SizedBox(
       width: MediaQuery.of(context).size.width,
       height: 190,
-      child: Card(
-        elevation: 5,
-        shape: const RoundedRectangleBorder(
-            borderRadius: BorderRadius.all(Radius.circular(15))),
-        color: AppTheme.whiteColor,
-        child: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              Container(
-                  height: 100,
-                  width: 100,
-                  decoration: BoxDecoration(
-                      color: AppTheme.themeColor,
-                      borderRadius: BorderRadius.circular(100)
-                      //more than 50% of width makes circle
-                      ),
-                  child: Image.asset(
-                    'assets/icons/account.png',
-                    scale: 1.2,
-                  )),
-              const Text(
-                'Tenant',
-                style: TextStyle(fontSize: 18, color: AppTheme.themeColor),
-              )
-            ],
+      child: InkWell(
+        onTap: (){
+          Navigator.pushNamed(context, '/tenant_login');
+        },
+        child: Card(
+          elevation: 5,
+          shape: const RoundedRectangleBorder(
+              borderRadius: BorderRadius.all(Radius.circular(15))),
+          color: AppTheme.whiteColor,
+          child: Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Container(
+                    height: 100,
+                    width: 100,
+                    decoration: BoxDecoration(
+                        color: AppTheme.themeColor,
+                        borderRadius: BorderRadius.circular(100)
+                        //more than 50% of width makes circle
+                        ),
+                    child: Image.asset(
+                      'assets/icons/account.png',
+                      scale: 1.2,
+                    )),
+                const Text(
+                  'Tenant',
+                  style: TextStyle(fontSize: 18, color: AppTheme.themeColor),
+                )
+              ],
+            ),
           ),
         ),
       ),
