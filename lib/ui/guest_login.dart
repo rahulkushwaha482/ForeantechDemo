@@ -9,12 +9,15 @@ class GuestLogin extends StatefulWidget {
 }
 
 class _GuestLoginState extends State<GuestLogin> {
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       floatingActionButton: FloatingActionButton.extended(
         backgroundColor: AppTheme.themeColor,
-        onPressed: () {},
+        onPressed: () {
+          Navigator.pushNamed(context, '/otp');
+        },
         label: const Text(
           'Proceed to payment',
           style: TextStyle(fontFamily: 'Bold', fontSize: 16),
@@ -192,7 +195,7 @@ class _GuestLoginState extends State<GuestLogin> {
                           ),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
+                            children: const [
                               Icon(
                                 Icons.drive_folder_upload,
                                 color: AppTheme.whiteColor,
@@ -222,7 +225,7 @@ class _GuestLoginState extends State<GuestLogin> {
   }
 
   Widget _widgetReference(){
-    return Container(
+    return SizedBox(
       width: MediaQuery.of(context).size.width,
       child: Padding(
         padding: const EdgeInsets.all(8.0),
@@ -237,38 +240,38 @@ class _GuestLoginState extends State<GuestLogin> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.start,
-              children: [
-                const Text(
+              children: const [
+                Text(
                   'Room Preference Details',
                   style: TextStyle(
                       fontFamily: 'SemiBold',
                       fontSize: 18,
                       color: AppTheme.textColor),
                 ),
-                const SizedBox(
+                SizedBox(
                   height: 10,
                 ),
-                const Text(
+                Text(
                   'Room Number',
                   style: TextStyle(
                       fontFamily: 'SemiBold',
                       fontSize: 16,
                       color: AppTheme.textColor),
                 ),
-                const SizedBox(
+                SizedBox(
                   height: 10,
                 ),
-                const Text(
+                Text(
                   'Move in Date',
                   style: TextStyle(
                       fontFamily: 'SemiBold',
                       fontSize: 16,
                       color: AppTheme.textColor),
                 ),
-                const SizedBox(
+                SizedBox(
                   height: 10,
                 ),
-                const Text(
+                Text(
                   'Booked Through',
                   style: TextStyle(
                       fontFamily: 'SemiBold',
@@ -282,4 +285,5 @@ class _GuestLoginState extends State<GuestLogin> {
       ),
     );
   }
+
 }

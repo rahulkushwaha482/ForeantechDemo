@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:forentech_assignment/core/utils/app_routes.dart';
 import 'package:forentech_assignment/ui/guest_login.dart';
 import 'package:forentech_assignment/ui/login_screen.dart';
+import 'package:forentech_assignment/ui/otp_screen.dart';
 import 'package:forentech_assignment/ui/splash_screen.dart';
 import 'package:forentech_assignment/ui/tenant_login.dart';
 
@@ -36,7 +37,8 @@ class MyApp extends StatelessWidget {
           const GuestLogin(),
           StringConfig.TENANT_LOGIN: (BuildContext context) =>
           const TenantLogin(),
-
+          StringConfig.OTP_SCREEN: (BuildContext context) =>
+          const OtpScreen(),
         });
   }
 }

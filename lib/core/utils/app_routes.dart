@@ -6,5 +6,6 @@ class StringConfig{
   static String SPLASH_SCREEN = '/splash';
   static String TENANT_LOGIN = '/tenant_login';
   static String GUEST_LOGIN = '/guest_login';
+  static String OTP_SCREEN  = '/otp';
 
 }
